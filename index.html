@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body  data-theme="light">
+    <header class="header" id="header" data-scrolled="false">
+            <nav class="nav flex__display">
+                <a href="#" class="nav__logo">alucah</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list list__hedden" id="nav-list">
+                        <li class="nav__itens">
+                            <a class="nav__links active" href="#home">home</a>
+                        </li>
+                        <li class="nav__itens">
+                            <a class="nav__links " href="#about">Sobre</a>
+                        </li>
+                        <li class="nav__itens">
+                            <a class="nav__links" href="#skills">Habilidades</a>
+                        </li>
+                        <li class="nav__itens">
+                            <a class="nav__links" href="#project"> Projetos</a>
+                        </li>
+                        <li class="nav__itens">
+                            <a class="nav__links" href="#contact">Contatos</a>
+                        </li>
+                    </ul>
+
+                </div>
+            <div class="nav__icons">
+                <div class="nav__toggle " id="nav-toggle">
+                        <i class='bxr  bx-menu'  ></i> 
+                    </div>
+                <div class="nav__close icon__hidden" id="nav-close">
+                            <i class='bxr  bx-x'></i> 
+                </div>
+
+                <button class="dark__mode" id="dark-mode">
+                    <div class="dark" id="dark">
+                        <i class='bxr  bx-moon-star'  ></i> 
+                    </div>
+                    <div class="ligth dark-hidden" id="ligth" >
+                        <i class='bxr  bx-sun-dim'  ></i> 
+                    </div>
+                </button>
+                </div>
+
+            </nav>
+
+    </header>
+    <main>
+        <div class="conteiner">
+            <section id="home">
+                <div class="home__content conteiner-grid">
+                    <div class="home__description desc-content">
+                        <div class="home__follow flex__display">
+                            <div>
+                                <h3>Me sigam</h3>
+                            </div>
+                            <div class="home__follow-icons">
+                                <i class="ri-instagram-line"></i>
+                                <i class="ri-tiktok-fill"></i>
+                            </div>
+                        </div>
+                        <h1 class="title"><span>Olá,</span> me chamo Lucas</h1>
+                        <span class="sub_title">Frontend Developer</span>
+                        <p class="paragraph">Sou um entusiasta da programação em busca da minha primeira oportunidade no mercado de tecnologia. Minha paixão por criar interfaces web funcionais e visualmente atraentes me levou a dominar as principais tecnologias do front-end.</p>
+                        <button class="button flex__display">Mais sobre <i class='bx bx-arrow-down-right-stroke'></i></button>
+                    </div>
+                    <div class="home__image flex__display">
+                        <div class="home__image-bg">
+                            <img src="./alucah.png" alt="alucah">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="section__conteiner about_conteiner">
+                    <div class="section_head flex__display">
+                        <h4 class="title-first">Minha intro</h4>
+                        <h2 class="title-second">Sobre mim</h2>
+                    </div>
+                    <!-- CONTAINER DE ANIMAÇÃO: SOBRE -->
+                    <div data-anime-container class="about__content conteiner-grid">
+                        <div data-anime-item class="about__image about_animation">
+                            <div class="about__image-bg">
+                                <img src="./alucah.png" alt="alucah">
+                            </div>
+                        </div>
+
+                        <div data-anime-item class="about__description flex__display about_animation">
+                            <h1>Olá, sou Lucas Silva, natural de Salvador</h1>
+                            <p>Minha jornada na programação começou de forma independente, explorando comunidades de desenvolvimento no Telegram, onde tive meu primeiro contato com <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>. Desde então, mantive um aprendizado contínuo e prático, sempre buscando transformar desafios em oportunidades de crescimento.</p>
+                            <p>Estou focado em me tornar um profissional capacitado para criar interfaces modernas, responsivas e acessíveis, e busco minha primeira oportunidade como <span>Desenvolvedor Front-End Júnior</span>, onde eu possa contribuir com entusiasmo, aprender com experiências reais e evoluir junto com a equipe.</p>
+                            <button class="button flex__display"><i class='bx bx-chevrons-down'></i> Meus Contatos</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="skills" class="section__conteiner">
+                    <div class="section_head flex__display">
+                        <h4 class="title-first">Minhas habilidades</h4>
+                        <h2 class="title-second">Minhas experiências</h2>
+                    </div>
+
+                    <!-- CONTAINER DE ANIMAÇÃO: SKILLS -->
+                    <div data-anime-container class="skills__content conteiner-grid">
+                        <div data-anime-item class="skills__description skillAnimation">
+                            <div>
+                                <i class='bx bx-clipboard-code'></i> 
+                            </div>
+                            <div>
+                                <h3>Frontend Developer</h3>
+                                <span>mais de 1 ano e meio</span>
+                            </div>
+                        </div>
+
+                        <div data-anime-item class="skills-data skillAnimation">
+                            <div class="skills-titles">
+                                <h3>HTML</h3>
+                                <span>90%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 90%;"></span>
+                            </div>
+                            <div class="skills-titles">
+                                <h3>CSS</h3>
+                                <span class="skills-titles-css">70%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 70%;"></span>
+                            </div>
+                            <div class="skills-titles">
+                                <h3>JavaScript</h3>
+                                <span class="skills-titles-js">45%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 45%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="project" class="section__conteiner">
+                    <div class="section_head flex__display">
+                        <h4 class="title-first">Meu portfolio</h4>
+                        <h2 class="title-second">Trabalhos recentes</h2>
+                    </div>
+
+                    <!-- CONTAINER DE ANIMAÇÃO: CARDS DE PROJETOS -->
+                    <div data-anime-container class="project__content">
+                        <div data-anime-item class="project__card">
+                            <div class="project__car-bg"></div>
+                            <img src="" alt="">
+                            <h3>web site</h3>
+                            <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
+                        </div>
+                        <div data-anime-item class="project__card">
+                            <div class="project__car-bg"></div>
+                            <img src="" alt="">
+                            <h3>web site</h3>
+                            <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
+                        </div>
+                        <div data-anime-item class="project__card">
+                            <div class="project__car-bg"></div>
+                            <img src="" alt="">
+                            <h3>web site</h3>
+                            <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
+                        </div>
+                        <div data-anime-item class="project__card">
+                            <div class="project__car-bg"></div>
+                            <img src="" alt="">
+                            <h3>web site</h3>
+                            <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
+                        </div>
+                        <div data-anime-item class="project__card">
+                            <div class="project__car-bg"></div>
+                            <img src="" alt="">
+                            <h3>web site</h3>
+                            <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
+                        </div>
+                        <div data-anime-item class="project__card">
+                            <div class="project__car-bg"></div>
+                            <img src="" alt="">
+                            <h3>web site</h3>
+                            <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact" class="section__conteiner contect">
+                    <div class="section_head flex__display">
+                        <h4 class="title-first">contatos</h4>
+                        <h2 class="title-second">Entre em contato</h2>
+                    </div>
+                    
+                    <!-- CONTAINER DE ANIMAÇÃO: CONTATOS -->
+                    <div data-anime-container class="contect__content">
+                        <div data-anime-item class="contect__card">
+                            <div class="contect__card-bg"></div>
+                            <div class="contect__des">
+                                <i class='bx bx-mail-open'></i> 
+                                <h3>Email</h3>
+                                <h4>lsilvacordeiro516@gamil.com</h4>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">Mandar Mensagem <i class='bx bx-send-alt'></i></a>
+                            </div>
+                        </div>
+                        <div data-anime-item class="contect__card">
+                            <div class="contect__des">
+                                <i class="ri-instagram-line"></i>
+                                <h3>instagram</h3>
+                                <h4>@allucah</h4>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">Mandar Mensagem <i class='bx bx-send-alt'></i></a>
+                            </div>
+                        </div>
+                        <div data-anime-item class="contect__card">
+                            <div class="contect__des">
+                                <i class="ri-whatsapp-line"></i>
+                                <h3>whatsapp</h3>
+                                <h4>55+(71)99206-0099</h4>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">Mandar Mensagem <i class='bx bx-send-alt'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        </div>
+    </main>
+     <footer class="section__conteiner">
+                <div class="footer__content">
+                    <div class="footer__name">
+                        <h2>alucah</h2>
+                        <h4>Frontend Developer</h4>
+                    </div>
+                    <div class="footer__links">
+                        <ul>
+                            <li><a href="#project">Projetos</a></li>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#skills">Habilidades</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__follows">
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-tiktok-fill"></i>
+                    </div>
+                </div>
+                <div class="footer__madein">
+                    <p>&#169 made for Lucas silva cordeiro</p>
+                </div>
+            </footer>
+    <script src="script1.js"></script>
+</body>
+</html>
