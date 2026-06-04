@@ -438,7 +438,40 @@ body[data-theme="dark"] {
     background-color: var(--color-link); 
 }
 
-/* -_-_-_-_- SKILL SECTION-_-_-_-_- */
+/* -_-_-_-_- project SECTION-_-_-_-_- */
+.project_header{
+    height: auto;
+
+}
+.nav__project{ 
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.nav__project li{
+    border: 1px transparent;
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: var(--color-bg);
+    font-size: var(--font-size-h3);
+}
+.nav__project li:hover{ 
+    background-color: var(--color-title-secondary-3);
+    transition: all .3s;
+    color: var(--color);
+}
+.project_links{
+    color: var(--color-title);
+}
+
+.nav__project .activeLInk{
+    background-color:  var(--color-title-secondary-3);
+}
+/*  hidden card if not activ */
+[data-active_cards = "false"]{
+    display: none;
+}
 
 /* Elementos ocultos por padrão */
 /* [data-anime-item] {
