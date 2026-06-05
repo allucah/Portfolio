@@ -152,102 +152,65 @@
                 <div class="section_head flex__display">
                     <h4 class="title-first">Meu portfolio</h4>
                     <h2 class="title-second">Trabalhos recentes</h2> 
-                    <header class="project_header ">
-                        <nav class="nav__project flex__display">
-                            <li class="activeLInk">
-                                <a href="#webSite" class="project_links ">Web Site</a>
-                            </li>
-                            <li>
-                                <a href="#LogIn"  class="project_links">Log In</a>
-                            </li>
-                        </nav>
-                    </header>
+                    <div class="filter__button flex__display">
+                        <button class="btn__project-filter filter-active" data-name="show all">Todos</button>
+                        <button class="btn__project-filter" data-name="webSite">Web Sites</button>
+                        <button class="btn__project-filter" data-name="Login">Log in</button>
+                    </div>
                 </div>
-                    <!-- CONTAINER DE ANIMAÇÃO: CARDS DE PROJETOS -->
-                <div data-anime-container class="project__container conteiner-grid" >
+                <!-- CONTAINER DE ANIMAÇÃO: CARDS DE PROJETOS -->
+                <div data-anime-container class="project__cotente " >
                     <!-- website projects and futures -->
-                    <div id="webSite" data-active_cards = "true" class="project__website-content">
-
-                        <div data-anime-item class="project__card">
-                            <div class="project__car-bg"></div>
+                    <div data-anime-item  data-name="website" class="project__card">
+                        <div class="project__car-bg"></div>
+                        <figure>
                             <img src="" alt="">
-                            <h3>web site</h3>
-                            <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
-                        </div>
-                        <div data-anime-item class="project__card">
-                            <div class="project__car-bg"></div>
+                        </figure>
+                        <h3>website</h3>
+                        <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
+                    </div>
+                    <div data-anime-item data-name="website" class="project__card">
+                        <div class="project__car-bg"></div>
+                        <figure> 
                             <img src="" alt="">
-                            <h3>web site</h3>
-                            <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
-                        </div>
-                        <div data-anime-item class="project__card">
-                            <div class="project__car-bg"></div>
+                        </figure>
+                        <h3>website</h3>
+                        <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
+                    </div>
+                    <div data-anime-item data-name="website" class="project__card">
+                        <div class="project__car-bg"></div>
+                        <figure>
                             <img src="" alt="">
-                            <h3>web site</h3>
-                            <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
-                        </div>
-                        <div data-anime-item class="project__card">
-                            <div class="project__car-bg"></div>
-                            <img src="" alt="">
-                            <h3>web site</h3>
-                            <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
-                        </div>
-                        <div data-anime-item class="project__card">
-                            <div class="project__car-bg"></div>
-                            <img src="" alt="">
-                            <h3>web site</h3>
-                            <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
-                        </div>
-                        <div data-anime-item class="project__card">
-                            <div class="project__car-bg"></div>
-                            <img src="" alt="">
-                            <h3>web site</h3>
-                            <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
-                        </div>
-                        
+                        </figure>
+                        <h3>website</h3>
+                        <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
                     </div>
                     <!-- logins projects and futures -->
-                    <div id="LogIn" data-active_cards = "false" class="project__LogIn-content">
-
-                        <div data-anime-item class="project__card">
-                            <div class="project__car-bg"></div>
+                    <div data-anime-item data-name="login" class="project__card">
+                        <div class="project__car-bg"></div>
+                        <figcaption>
                             <img src="" alt="">
-                            <h3>web site</h3>
-                            <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
-                        </div>
-                        <div data-anime-item class="project__card">
-                            <div class="project__car-bg"></div>
-                            <img src="" alt="">
-                            <h3>web site</h3>
-                            <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
-                        </div>
-                        <div data-anime-item class="project__card">
-                            <div class="project__car-bg"></div>
-                            <img src="" alt="">
-                            <h3>web site</h3>
-                            <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
-                        </div>
-                        <div data-anime-item class="project__card">
-                            <div class="project__car-bg"></div>
-                            <img src="" alt="">
-                            <h3>web site</h3>
-                            <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
-                        </div>
-                        <div data-anime-item class="project__card">
-                            <div class="project__car-bg"></div>
-                            <img src="" alt="">
-                            <h3>web site</h3>
-                            <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
-                        </div>
-                        <div data-anime-item class="project__card">
-                            <div class="project__car-bg"></div>
-                            <img src="" alt="">
-                            <h3>web site</h3>
-                            <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
-                        </div>
-
+                            <h3>Login</h3>
+                        </figcaption>
+                        <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
                     </div>
-                </+div>
+                    <div data-anime-item  data-name="login" class="project__card">
+                        <div class="project__car-bg"></div>
+                        <figcaption>
+                            <img src="" alt="">
+                            <h3>Login</h3>
+                        </figcaption>
+                        <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
+                    </div>
+                    <div data-anime-item data-name="login" class="project__card">
+                        <div class="project__car-bg"></div>
+                        <figcaption>
+                            <img src="" alt="">
+                            <h3>Login</h3>
+                        </figcaption>
+                        <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
+                    </div>
+                </div>
             </section>
 
             <section id="contact" class="section__conteiner contect">
