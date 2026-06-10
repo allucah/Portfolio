@@ -75,10 +75,10 @@
                         <p class="paragraph">Sou um entusiasta da programação em busca da minha primeira oportunidade no mercado de tecnologia. Minha paixão por criar interfaces web funcionais e visualmente atraentes me levou a dominar as principais tecnologias do front-end.</p>
                         <button class="button flex__display">Mais sobre <i class='bx bx-arrow-down-right-stroke'></i></button>
                     </div>
-                    <div class="home__image flex__display">
-                        <div class="home__image-bg">
+                    <div class="home__image image flex__display">
+                        <figure class="image-bg">
                             <img src="./alucah.png" alt="alucah">
-                        </div>
+                        </figure>
                     </div>
                 </div>
             </section>
@@ -89,10 +89,10 @@
                 </div>
                 <!-- CONTAINER DE ANIMAÇÃO: SOBRE -->
                 <div data-anime-container class="about__content conteiner-grid">
-                    <div data-anime-item class="about__image about_animation">
-                        <div class="about__image-bg">
+                    <div data-anime-item class="about__image image about_animation">
+                        <figure class="image-bg about__image-bg">
                             <img src="./alucah.png" alt="alucah">
-                        </div>
+                        </figure>
                     </div>
 
                     <div data-anime-item class="about__description flex__display about_animation">
@@ -162,53 +162,65 @@
                 <div data-anime-container class="project__cotente " >
                     <!-- website projects and futures -->
                     <div data-anime-item  data-name="website" class="project__card">
-                        <div class="project__car-bg"></div>
-                        <figure>
+
+                        <figure class="project__image-content">
                             <img src="" alt="">
                         </figure>
-                        <h3>website</h3>
-                        <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
+                        <div class="project__descrition">
+                            <p>website</p>
+                            <span>Demo <i class="bxr bx-arrow-up-right-stroke"></i></span>
+                        </div>
                     </div>
                     <div data-anime-item data-name="website" class="project__card">
-                        <div class="project__car-bg"></div>
-                        <figure> 
+
+                        <figure class="project__image-content"> 
                             <img src="" alt="">
                         </figure>
-                        <h3>website</h3>
-                        <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
+                        <div class="project__descrition">
+                            <p>website</p>
+                            <span>Demo <i class="bxr bx-arrow-up-right-stroke"></i></span>
+                        </div>
                     </div>
                     <div data-anime-item data-name="website" class="project__card">
-                        <div class="project__car-bg"></div>
-                        <figure>
+
+                        <figure class="project__image-content">
                             <img src="" alt="">
                         </figure>
-                        <h3>website</h3>
-                        <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
+                        <div class="project__descrition">
+                            <p>website</p>
+                            <span>Demo <i class="bxr bx-arrow-up-right-stroke"></i></span>
+                        </div>
                     </div>
                     <!-- logins projects and futures -->
                     <div data-anime-item data-name="login" class="project__card">
-                        <div class="project__car-bg"></div>
-                        <figcaption>
+
+                        <figure class="project__image-content">
                             <img src="" alt="">
-                            <h3>Login</h3>
-                        </figcaption>
-                        <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
+                        </figure>
+                        <div class="project__descrition">
+                            <p>Login</p>
+                            <span>Demo <i class="bxr bx-arrow-up-right-stroke"></i></span>
+                        </div>
                     </div>
                     <div data-anime-item  data-name="login" class="project__card">
-                        <div class="project__car-bg"></div>
-                        <figcaption>
+
+                        <figure class="project__image-content">
                             <img src="" alt="">
-                            <h3>Login</h3>
-                        </figcaption>
-                        <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
+                        </figure>
+                        <div class="project__descrition">
+                            <p>Login</p>
+                            <span>Demo <i class="bxr bx-arrow-up-right-stroke"></i></span>
+                        </div>
                     </div>
                     <div data-anime-item data-name="login" class="project__card">
-                        <div class="project__car-bg"></div>
-                        <figcaption>
+
+                        <figure class="project__image-content">
                             <img src="" alt="">
-                            <h3>Login</h3>
-                        </figcaption>
-                        <span>Demo <i class='bx bx-arrow-right-stroke'></i></span>
+                        </figure>
+                        <div class="project__descrition">
+                            <p>Login</p>
+                            <span>Demo <i class="bxr bx-arrow-up-right-stroke"></i></span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -251,27 +263,34 @@
         </div>
     </main>
     <footer class="section__conteiner">
-        <div class="footer__content">
-            <div class="footer__name">
-                <h2>alucah</h2>
-                <h4>Frontend Developer</h4>
+            <div class="footer__content">
+                <div class="footer__name">
+                    <h2>alucah</h2>
+                    <h4>Frontend Developer</h4>
+                </div>
+                
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#project">Projetos</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#about">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#skills">Habilidades</a>
+                        </li>
+                    </ul>
+                
+                <div class="footer__follows ">
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-tiktok-fill"></i>
+                </div>
             </div>
-            <div class="footer__links">
-                <ul>
-                    <li><a href="#project">Projetos</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                </ul>
+            <div class="footer__madein">
+                <p>&#169 made for Lucas silva cordeiro</p>
             </div>
-            <div class="footer__follows">
-                <i class="ri-instagram-line"></i>
-                <i class="ri-tiktok-fill"></i>
-            </div>
-        </div>
-        <div class="footer__madein">
-            <p>&#169 made for Lucas silva cordeiro</p>
-        </div>
-    </footer>
+        </footer>
     <script src="script.js"></script>
 </body>
 </html>
