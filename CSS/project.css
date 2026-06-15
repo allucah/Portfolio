@@ -1,0 +1,99 @@
+
+.filter__button{ 
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.btn__project-filter{
+    border: 1px transparent;
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: var(--color-bg);
+    color: var(--color-title);
+    font-size: var(--font-size-h3);
+    cursor:pointer;
+}
+.btn__project-filter:hover{ 
+    background-color: var(--color-title-secondary-5);
+    transition: all .3s;
+    color: var(--color);
+}
+.filter-active{
+    background-color:  var(--color-title-secondary-5);
+}
+.project__cotente { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 0fr));
+    gap: 2rem;
+    justify-content: center; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    width: 100%;
+    padding:1rem;
+}
+.project__card {
+    width: clamp(239px, 25vw, 280px);
+    padding: .5rem;
+    background-color: var(--color-card-bg-1);
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content:end;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    height: 220px;
+    z-index: 1;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
+}
+.project__image-content{
+    width: 100%;
+    background-color: var(--color-card-bg-2);
+    height: 100%;
+    border-radius: 1rem;
+    align-self: center;
+    box-shadow: 0px 23px var(--color-title-secondary-5);
+}
+/* Imagem responsiva dentro do card  _-_-_-_-*/
+.project__image-content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.project__descrition{
+    width: 100%;
+    margin-block: .5rem;
+    position: relative;
+}
+.project__descrition p {
+    transform: translate(0, -10px);
+    text-align: center;
+    color: var(--color-title);
+}
+.project__card span {
+    /* position: relative; */
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: var(--color-title);
+    position: relative;
+
+}
+.project__card span:hover{
+    transition: all .3s ease-in-out;
+    color: var(--color-title-secondary-4);
+}
+.project__card span::after{
+    content: '';
+    width: 100%;
+    border: .1px solid;
+    position: absolute;
+    bottom: .05rem;
+}
+.project__card span:hover i{
+    transition: all .3s ease-in-out;
+    transform: translate3d(2px, -5px, 0px);
+}

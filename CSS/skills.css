@@ -1,0 +1,39 @@
+.skills__description.flex__display{
+    gap: 1rem;
+}
+.skills__description div i{
+    font-size: 2rem;
+    color: var(--color-title-secondary);
+}
+.skills__description h3{
+    font-size: var(--font-size-h2);
+    color: var(--color-title-secondary);
+    font-weight: 600;
+}
+.skills__description span{
+    color: var(--color-title);
+    font-size: var(--font-size-h3);
+}
+.skills-data{
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+.skills-titles h3{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-title);
+}
+.skills-titles span{
+    color: var(--color-title);
+}
+.skills-percentage{
+    display: block;
+    background-color: var(--color-title-secondary);
+}
+.skills-bar, .skills-percentage { 
+    height: 5px; 
+    border-radius: .25rem;
+}
+.skills-bar { 
+    background-color: var(--color-link); 
+}

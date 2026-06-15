@@ -1,0 +1,57 @@
+:root {
+    --header-height: clamp(60px, 8vw, 80px);
+    --header-shadow: 0 2px clamp(4px, 1vw, 8px) rgba(0, 0, 0, 0.1);
+    --header-font-size: clamp(1rem, 2vw, 1.5rem);
+    --header-font-size-logo: clamp(0.6rem, 2vw, 1.25rem);
+    --font-pp: "Poppins", sans-serif;
+    --shadow-md: 0 2px 12px rgba(0, 0, 0, 0.2);
+    --shadow-cards-icons: 1px 4px 12px hsla(0, 2%, 48%, 0.401);
+    --img-width-sm: clamp(150px, 100%, 300px);
+    --img-width-md: clamp(200px, 10vw, 500px);
+    --font-size-h1: clamp(2rem, 5vw, 3.5rem);
+    --font-size-h1-span: clamp(3rem, 10vw, 4rem);
+    --font-size-h2: clamp(1.2rem, 4vw, 2rem);
+    --font-size-h3: clamp(.85rem, 3vw, .5rem);
+    --font-size-p:  clamp(0.7rem, 6.5vw, .9rem);
+    --font-size-small: 0.875rem;
+    --btn-font-size: clamp(1rem, 2vw, 1.2rem);
+
+    --color: rgb(255, 255, 255);
+    --color-second: rgb(165, 165, 165);
+    --color-bg: rgb(242, 243, 237);
+    --color-second-bg: rgb(255, 255, 255);
+    --color-second-bg: rgb(255, 255, 255);
+    --color-title: rgb(173, 177, 158);
+    --color-title-secondary-3: rgb(27, 27, 27);
+    --color-title-secondary: rgb(56, 56, 56);
+    --color-title-secondary-4: rgb(56, 56, 56);
+    --color-title-secondary-5: rgb(27, 27, 27);
+    --color-paragraph:rgb(74, 74, 74) ;
+    --color-link:rgb(239, 239, 239) ;
+    --color-linear-bg:  linear-gradient(145deg, rgb(232, 233, 232), rgba(246, 244, 244, 0.614) );
+    --color-btn:  rgb(36, 37, 33);
+    --color-btn-border: rgb(171, 171, 171);
+    --color-card-bg:rgb(242, 243, 237);
+    --color-card-bg-1:rgb(255, 255, 255);
+    --color-card-bg-2:rgb(216, 216, 216);
+}
+/* ATRIBUTO DATASET PARA O DARK MODE */
+body[data-theme="dark"] {
+    --color: rgb(255, 255, 255);
+    --color-second: rgb(165, 165, 165);
+    --color-bg: rgb(34, 34, 34);
+    --color-second-bg: rgb(20, 20, 20);
+    --color-title: rgba(255, 255, 255, 0.77);
+    --color-title-secondary: rgb(235, 232, 232);
+    --color-title-secondary-3: rgb(255, 255, 255);
+    --color-title-secondary-4: rgb(255, 254, 254);
+    --color-title-secondary-5: rgb(0, 0, 0);
+    --color-paragraph: rgb(130, 129, 129);
+    --color-link: rgba(59, 57, 57, 0.37);
+    --color-card-bg: rgba(9, 9, 9, 0.477);
+    --color-card-bg-2: rgb(34, 34, 34);
+    --color-card-bg-1: rgba(9, 9, 9, 0.477);
+    --color-linear-bg: linear-gradient(145deg, #0b0b0b, rgb(80, 80, 80));
+    --color-btn-border: rgb(239, 239, 239);
+    transition: all .4s;
+}

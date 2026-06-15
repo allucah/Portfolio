@@ -1,0 +1,46 @@
+.contect__content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 200px));
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+.contect__card{
+    width: clamp(min(100%, 250px), 100%, 300px);
+    height: clamp(150px, 10vw, 300px);
+    border-radius: 1rem;
+    background-color:var(--color-card-bg);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .6rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.contect__des i{
+    font-size: 1.5rem;
+    color: var(--color-title-secondary);
+}
+.contect__des h3{
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--color-title-secondary);
+}
+.contect__des h4{
+    font-size: .8rem;
+    color: var(--color-title);
+    font-weight: 400;   
+}
+.contect__des a{
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    color: var(--color-title-secondary);
+    font-weight: 600;
+    gap: .5rem;
+    padding-inline-start: 1.5rem;
+}
+.contect__des a i{
+    font-size: .9rem;
+}

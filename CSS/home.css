@@ -1,0 +1,106 @@
+.home__content{
+    position: relative;
+}
+.home__description{
+    order: 1;
+}
+.home__image{
+    animation: appear__item ease-in-out .8s forwards;
+}
+
+.image img {
+    width: clamp(210px, 25vw, 320px);
+    height: auto;
+    z-index: 100;
+    background: transparent;
+    object-fit: cover;
+}
+
+.image-bg {
+    width: clamp(210px, 25vw, 320px);
+    height: clamp(210px, 25vw, 320px); 
+    z-index: 10;
+    margin-top: 1rem;
+    justify-self: center;
+    clip-path: circle(50% at 50% 50%);
+    background: var(--color-linear-bg);
+}
+.home__follow{
+    gap: .3rem;
+    font-size: clamp(.85rem, 3vw, .5rem);
+    color: var(--color-title);
+    position: absolute; 
+    rotate: 90deg;
+    right: -3.2rem;
+    top: 5.5rem;
+    gap: 2.5rem;
+}
+.home__follow h3{
+    font-weight: 500;
+}
+.home__follow-icons {
+    position: relative;
+    font-size: 1.2rem;
+    rotate: -90deg;
+    display: flex;
+    flex-direction: column;
+}
+.home__follow-icons::after{
+    content: '';
+    width: 2px;
+    height: 17px;
+    background-color: var(--color-title);
+    position: absolute;
+    top: -1.4rem;
+    left: .5rem;
+}
+.home__follow-icons i:hover {
+    transition: .4s;
+    transform: translateY(2px);
+    cursor: pointer;
+}
+.home__description{
+    display: flex;
+    flex-direction: column;
+    animation: showCard .6s ease-in-out forwards;
+}
+.home__description .title{
+    color: var(--color-title);
+    font-size:var(--font-size-h1);
+    width: min(90%, 400px);
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+.home__description .title span{
+    font-size: var(--font-size-h1-span);
+    color: var(--color-title-secondary-4);
+    font-weight: 600;
+}
+.home__description span{
+    font-size: var(--font-size-h2);
+    font-weight: 500;
+    color: var(--color-title-secondary-4);
+}
+.home__description .paragraph{
+    margin-block: .5rem;
+    font-size: clamp(0.7rem, 6.5vw, .9rem);
+    color: var(--color-paragraph);
+    width: max(100%, 100px);
+}
+.home__description .button{
+    align-self: center;
+}
+.button:hover{
+    background: var(--color-linear-bg);
+    color: var(--color-title-secondary);
+    transition: all .5s;
+}
+.button:hover i{
+    animation: dowButon .3s ease-in-out;
+}
+@keyframes dowButon{
+    0%{transform: translateY(-3px);}
+    50%{transform: translateY(3px);}
+    75%{transform: translateY(-1px);}
+    100%{transform: translateY(3px);}
+}

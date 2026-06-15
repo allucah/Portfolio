@@ -59,9 +59,9 @@
     <main>
         <div class="conteiner">
             <section id="home">
-                <div class="home__content conteiner-grid">
+                <div data-anime-container class="home__content conteiner-grid">
                     <div class="home__description desc-content">
-                        <div class="home__follow flex__display">
+                        <div data-anime-item class="home__follow flex__display">
                             <div>
                                 <h3>Me sigam</h3>
                             </div>
@@ -70,12 +70,12 @@
                                 <i class="ri-tiktok-fill"></i>
                             </div>
                         </div>
-                        <h1 class="title"><span>Olá,</span> me chamo Lucas</h1>
-                        <span class="sub_title">Frontend Developer</span>
-                        <p class="paragraph">Sou um entusiasta da programação em busca da minha primeira oportunidade no mercado de tecnologia. Minha paixão por criar interfaces web funcionais e visualmente atraentes me levou a dominar as principais tecnologias do front-end.</p>
-                        <button class="button flex__display">Mais sobre <i class='bx bx-arrow-down-right-stroke'></i></button>
+                        <h1 data-anime-item class="title"><span>Olá,</span> me chamo Lucas</h1>
+                        <span data-anime-item  class="sub_title">Frontend Developer</span>
+                        <p data-anime-item  class="paragraph">Sou um entusiasta da programação em busca da minha primeira oportunidade no mercado de tecnologia. Minha paixão por criar interfaces web funcionais e visualmente atraentes me levou a dominar as principais tecnologias do front-end.</p>
+                        <button data-anime-item  class="button flex__display">Mais sobre <i class='bx bx-arrow-down-right-stroke'></i></button>
                     </div>
-                    <div class="home__image image flex__display">
+                    <div  class="home__image image flex__display">
                         <figure class="image-bg">
                             <img src="./alucah.png" alt="alucah">
                         </figure>
@@ -103,7 +103,6 @@
                     </div>
                 </div>
             </section>
-
             <section id="skills" class="section__conteiner">
                 <div class="section_head flex__display">
                     <h4 class="title-first">Minhas habilidades</h4>
@@ -112,7 +111,7 @@
 
             <!-- CONTAINER DE ANIMAÇÃO: SKILLS -->
             <div data-anime-container class="skills__content conteiner-grid">
-                <div data-anime-item class="skills__description skillAnimation">
+                <div data-anime-item class="skills__description flex__display">
                     <div>
                         <i class='bx bx-clipboard-code'></i> 
                     </div>
@@ -122,7 +121,7 @@
                     </div>
                 </div>
 
-                <div data-anime-item class="skills-data skillAnimation">
+                <div data-anime-item class="skills-data ">
                     <div class="skills-titles">
                         <h3>HTML</h3>
                         <span>90%</span>
@@ -147,7 +146,6 @@
                 </div>
             </div>
             </section>
-
             <section id="project" class="section__conteiner">
                 <div class="section_head flex__display">
                     <h4 class="title-first">Meu portfolio</h4>
@@ -224,7 +222,6 @@
                     </div>
                 </div>
             </section>
-
             <section id="contact" class="section__conteiner contect">
                 <div class="section_head flex__display">
                     <h4 class="title-first">contatos</h4>
@@ -290,7 +287,7 @@
             <div class="footer__madein">
                 <p>&#169 made for Lucas silva cordeiro</p>
             </div>
-        </footer>
-    <script src="script.js"></script>
+    </footer>
+    <script type="module" src="./main.js"></script>
 </body>
 </html>

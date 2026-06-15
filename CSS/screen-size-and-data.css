@@ -1,0 +1,67 @@
+@media (min-width:667px){
+    .home__follow {
+        position: static;
+        rotate: 0deg;
+        gap: 2.5rem;
+        justify-content: start;
+        margin: 1rem 1rem 2rem 1rem;
+    }
+    .home__follow-icons {
+        rotate: 0deg;
+        flex-direction: row;
+        gap: .5rem;
+    }
+    .home__follow-icons::after {
+        width: 28px;
+        height: 3px;
+        top: 0.6rem;
+        left: -2.1rem;
+    }
+    .home__description .button{
+        align-self: self-start;
+    }
+    /* About _-_-_-_-_-_-_-_ */
+        .about__description .button {
+        align-self: center;
+    }
+
+    /* footer _-_-_-_-_-_-_-_ */
+    .footer__content{
+        justify-content: space-evenly;
+    }
+    .footer__links{
+        flex-direction: row;
+    }
+    .footer__follows{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+@media (min-width:760px){
+        .home__image {
+        order: 1;
+    }
+}
+@media (min-width:1280px){
+    .home__description .title {
+    line-height: 3rem;
+}
+}
+/* Elementos ocultos por padrão */
+[data-anime-item] {
+    opacity: 0;
+    transform: translatex( 100px);
+    transition: opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1), 
+    transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: opacity, transform;
+}
+
+[data-anime-item].ShowCard {
+    opacity: 1;
+    transform: translateY( 0);
+}
+[data-anime-item].ShowImage {
+    opacity: 1;
+    transform: translateY( -30px);
+}
