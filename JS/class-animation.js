@@ -1,7 +1,7 @@
 export default class Animation {
     constructor(containerElement, delayBetweenItems = 0) {
         this.container = containerElement;
-        this.itens = this.container.querySelectorAll('[data-anime-item]');
+        this.itens = this.container.querySelectorAll('[data-anime-item], [data-animation-class]');
         this.middle = window.innerHeight * 0.85;
         this.delayBetweenItems = delayBetweenItems;
     }
@@ -13,7 +13,13 @@ export default class Animation {
                 if (this.delayBetweenItems > 0) {
                     item.style.transitionDelay = `${index * this.delayBetweenItems}s`;
                 }
-                item.classList.add(classe);
+                const classePersonalizada = item.dataset.animationClass;
+
+                if (classePersonalizada) {
+                    item.classList.add(classePersonalizada);
+                } else {
+                    item.classList.add(classe);
+                }
             }
         });
     }

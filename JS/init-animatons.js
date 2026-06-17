@@ -10,19 +10,12 @@ export default function initAnimations() {
     
     function handleScroll(forceClassName = null) {
         animations.forEach(({ animation, className }) => {
-            // Se forceClassName for passado, usa ele para todas
-            // Senão, usa a classe específica de cada container
             const classToUse = forceClassName || className;
             animation.animar(classToUse);
         });
     }
     
-    // Inicializa com as classes padrão de cada container
     handleScroll();
     
-    // Scroll continua com as classes padrão
     window.addEventListener('scroll', () => handleScroll());
-    
-    // Exemplo: se quiser forçar uma classe específica em algum momento
-    // handleScroll('UniversalClass');
 }
