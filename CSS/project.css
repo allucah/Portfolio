@@ -19,6 +19,7 @@
 }
 .filter-active{
     background-color:  var(--color-title-secondary-5);
+    transition: all .3s ease-in-out;
 }
 .project__cotente { 
     display: grid;
@@ -72,7 +73,6 @@
     color: var(--color-title);
 }
 .project__card span {
-    /* position: relative; */
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -80,7 +80,9 @@
     cursor: pointer;
     color: var(--color-title);
     position: relative;
-
+}
+.project__card.hide{
+    display: none;
 }
 .project__card span:hover{
     transition: all .3s ease-in-out;

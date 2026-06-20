@@ -6,6 +6,7 @@ import initDarkMode from './JS/dark-mode.js'
 import initScrollHeader from './JS/scroll-header.js'
 import initScrollButtons from './JS/scroll-buttons.js'
 import initSmoothScroll from './JS/scroll-smooth.js'
+import filerCards from './JS/filter-cards.js'
 
 function init() {
     initAnimations();
